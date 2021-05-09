@@ -22,3 +22,4 @@ write_list_to_file(Filename,List) :-
     open(Filename, write, File),
     \+ loop_through_list(File, List),
     close(File).
+	

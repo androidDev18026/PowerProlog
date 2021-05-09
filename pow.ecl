@@ -4,11 +4,11 @@
 pow(X,0,[1]) :- number(X), X > 0, !.
 
 pow(X,P,[Temp|Tail]) :-
-	number(X), 
-	number(P),
-	Temp is X^P,
-	TemP is P - 1,
-	pow(X,TemP,Tail).
+    number(X), 
+    number(P),
+    Temp is X^P,
+    TemP is P - 1,
+    pow(X,TemP,Tail).
 
 %% https://stackoverflow.com/questions/8289361/writing-to-file-prolog
 
